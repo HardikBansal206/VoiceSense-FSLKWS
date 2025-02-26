@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - VoiceSense</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <form class="auth-form" id="login-form">
+            <h2>Welcome Back</h2>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="btn primary">Sign In</button>
+            <p>New user? <a href="#" id="show-signup">Create account</a></p>
+        </form>
+
+        <form class="auth-form hidden" id="signup-form">
+            <h2>Create Account</h2>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="btn primary">Sign Up</button>
+            <p>Already have an account? <a href="#" id="show-login">Log in</a></p>
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

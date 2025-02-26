@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - VoiceSense</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">VoiceSense</div>
+        <ul>
+            <li><a href="#upload">Upload</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <main class="dashboard">
+        <section id="upload">
+            <h2>Upload Audio</h2>
+            <form id="audio-form">
+                <div class="file-upload">
+                    <input type="file" id="audio-file" accept="audio/*" multiple>
+                    <label for="audio-file">Choose files or drag here</label>
+                </div>
+                <select id="language-select">
+                    <option value="">Select Language</option>
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <!-- Add more language options -->
+                </select>
+                <button type="submit" class="btn primary">Process Audio</button>
+            </form>
+        </section>
+
+        <section id="results" class="hidden">
+            <h2>Detection Results</h2>
+            <div id="results-container"></div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
